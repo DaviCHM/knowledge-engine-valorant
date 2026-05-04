@@ -6,8 +6,6 @@ Projeto da disciplina Lógica e Matemática Discreta (2026/1) — Insper.
 
 O dataset contém estatísticas de jogadores de todos os torneios profissionais de Valorant de 2021.
 
-Fonte: https://www.kaggle.com/datasets/visualize25/valorant-pro-matches-full-data
-
 Esses dados são do meu primeiro campeonato profissional de Valorant. Meu nick era Chase e achei interessante usar como dataset para o projeto analisando alguns dados que eu nunca parei pra analisar. O filtro aplicado mantém apenas partidas de mim (chase) em torneios brasileiros (há outro chase que competiu na região NA, excluído intencionalmente). Registros com múltiplos agentes por mapa e linhas de agregação foram removidos.
 
 Campos selecionados (5 qualitativos, 4 quantitativos): jogador, time, agente, torneio, fase, kills, deaths, assists, acs.
