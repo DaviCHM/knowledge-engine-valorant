@@ -17,6 +17,7 @@ Campos selecionados (5 qualitativos, 4 quantitativos): jogador, time, agente, to
 3. Filtragem dos dados: o script etl.py lê o CSV, filtra apenas as partidas do jogador chase em torneios brasileiros, remove linhas com múltiplos agentes por mapa e linhas de agregação geral.
 4. Geração da base de conhecimento: o ETL escreve os predicados no formato partida/9 em Prolog, prontos para serem consultados.
 5. Formulação das perguntas: foram criadas 5 queries sofisticadas usando findall, sum_list, setof e agrupamento por agente, torneio e fase para calcular médias, KDA e comparações.
+6. Link Kaggle: https://www.kaggle.com/datasets/ryanluong1/valorant-champion-tour-2021-2023-data
 
 ## Como rodar
 
