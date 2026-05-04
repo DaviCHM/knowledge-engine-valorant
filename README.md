@@ -84,6 +84,26 @@ Agente = raze,
 Fase = upper_semifinals,
 Media = 209,
 Torneio = champions_tour_brazil_stage_3_challengers_playoffs
+ACS = 249,
+Agente = kayo,
+Fase = round_of_16,
+Media = 209,
+Torneio = champions_tour_brazil_stage_3_challengers_2
+ACS = 237,
+Agente = raze,
+Fase = opening_a,
+Media = 209,
+Torneio = champions_tour_brazil_stage_3_challengers_1
+ACS = 229,
+Agente = raze,
+Fase = round_of_32,
+Media = 209,
+Torneio = champions_tour_brazil_stage_3_challengers_1
+ACS = 239,
+Agente = reyna,
+Fase = round_of_32,
+Media = 209,
+Torneio = champions_tour_brazil_stage_3_challengers_1
 
 O jogador melhorou seus kills da terrornet para a stars_horizon?
 R- MediaAntiga = 18,
