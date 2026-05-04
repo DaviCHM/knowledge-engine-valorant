@@ -10,6 +10,14 @@ Esses dados são do meu primeiro campeonato profissional de Valorant. Meu nick e
 
 Campos selecionados (5 qualitativos, 4 quantitativos): jogador, time, agente, torneio, fase, kills, deaths, assists, acs.
 
+## Construcao do projeto
+
+1. Escolha do dataset: estatísticas de partidas profissionais de Valorant de 2021, disponível no Kaggle.
+2. Seleção de campos: foram escolhidos 9 campos da tabela de estatísticas por mapa, combinando variáveis qualitativas (jogador, time, agente, torneio, fase) e quantitativas (kills, deaths, assists, acs).
+3. Filtragem dos dados: o script etl.py lê o CSV, filtra apenas as partidas do jogador chase em torneios brasileiros, remove linhas com múltiplos agentes por mapa e linhas de agregação geral.
+4. Geração da base de conhecimento: o ETL escreve os predicados no formato partida/9 em Prolog, prontos para serem consultados.
+5. Formulação das perguntas: foram criadas 5 queries sofisticadas usando findall, sum_list, setof e agrupamento por agente, torneio e fase para calcular médias, KDA e comparações.
+
 ## Como rodar
 
 O arquivo players_stats.csv deve estar na raiz do projeto.
@@ -29,6 +37,8 @@ Isso gera o arquivo chase_vct.pl com os fatos. O arquivo já presente no reposit
 5. No Swish, pode ser que nao seja necessário usar o ?- antes dar perguntas pelo fato do site ja ter por padrão
 
 ## Perguntas
+
+ACS = Average Combat Score = pontuação media de combate
 
 Pergunta 1 — Qual agente teve o maior ACS médio?
 
@@ -70,7 +80,7 @@ Pergunta 5 — Qual foi a fase mais difícil para o chase(menor kda medio)?
 
 Calcula o KDA médio por fase e ordena de forma crescente, a fase com menor KDA é considerada a mais difícil.
 
-Respostas esperadas:
+## Respostas esperadas:
 
 Qual agente teve o maior ACS médio?
 R- [239-reyna, 218.33333333333334-raze, 200.57142857142858-kayo, 182-skye]
