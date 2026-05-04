@@ -12,7 +12,7 @@ Campos selecionados (5 qualitativos, 4 quantitativos): jogador, time, agente, to
 
 ## Como rodar
 
-O arquivo players_stats.csv deve estar na raiz do projeto (download pelo link acima).
+O arquivo players_stats.csv deve estar na raiz do projeto.
 
 ```
 python etl.py
